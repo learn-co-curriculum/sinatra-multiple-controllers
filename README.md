@@ -78,3 +78,4 @@ You can run this complex application with `rackup`. Once the application loads a
 
 * [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
 * [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
+<a href='https://learn.co/lessons/sinatra-multiple-controllers' data-visibility='hidden'>View this lesson on Learn.co</a>
