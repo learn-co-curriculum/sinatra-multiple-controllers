@@ -1,13 +1,32 @@
 # Sinatra Multiple Controllers
 
+## Objectives
 1. Multi-Controller Application structure.
 2. Mounting multiple controllers
 
-Often applications need to respond to multiple URLs relating to a single concept in the application.
+## Intro
 
-In an e-commerce application, the `/products` URL, would relate to requests to view products. `/products/1` would represent requesting information about the first product. However URLs around `/orders` would relate to requests to view a customer's order history. `/orders/1` would represent requesting information about the first order.
+If you think about a typical e-commerce application, you would need at least two models: one for orders and one for products. The products model would require a series of routes all starting with `/products`, and the orders model routes would start with `/orders`.  `/products/1` would represent requesting information about the very first product, and `/orders/1` would represent requesting information about the first order.
 
-To separate these domain concepts in our code, we'd actually code the responses to such a grouping of URLs in separate controllers. Every controller in our application should follow the Single Responsibility Principal, only encapsulating logic relating to a singular entity in our application domain.
+When you think about all the CRUD actions, you would need a lot of controller actions for both of these models:
+
+
+| Request | Route | CRUD Action |
+|----------|------|-------------|
+| GET      | '/products/:id' | Read |
+| GET      | '/products/new'  | Create |
+| POST     | '/products'   | Create |
+| GET      | '/products/:id/edit'| Update|
+| POST     | '/products/:id'     | Update |
+| GET      | '/products'         | Read|
+| POST     | '/products/:id/delete'| Delete|
+
+
+With GET and POST requests, you're looking at a really full and complex controller. With that much code in one file, it gets hard to maneuver and find different pieces of the code you might need to edit or update.
+
+Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principal, only encapsulating logic relating to a singular entity in our application domain.
+
+### Products Controller
 
 You can imagine a controller `ProductsController`, defined in `app/controllers/products_controller.rb`.
 
@@ -25,7 +44,7 @@ class ProductsController < Sinatra::Base
 end
 ```
 
-Don't worry about the specifics of how `get '/products/:id'` as a route functions, just know it provides the functionality of URLs that match the pattern `/products/1`, `/products/2`, `/products/10`, etc.
+### Orders Controller
 
 Similarly, we'd have `OrdersController` defined in `app/controllers/orders_controller.rb`/
 
@@ -57,7 +76,7 @@ require_relative 'app/controllers/products_controller'
 require_relative 'app/controllers/orders_controller'
 ```
 
-Then, we must mount both classes. Only one class can be specified to be `run`. The other class must be loaded as something called MiddleWare. We won't get into MiddleWare now, suffice to say, you simply `use` it instead of `run`.
+Then, we must mount both classes. Only one class can be specified to be `run`. The other class must be loaded as Middleware We won't get into MiddleWare now, suffice to say, you simply `use` it instead of `run`.
 
 `config.ru`:
 ```ruby
@@ -72,7 +91,7 @@ run OrdersController
 
 Which classes you `use` or `run` matter, but we won't worry about that now, just make sure you only ever `run` one class and the rest our loaded via `use`.
 
-You can run this complex application with `rackup`. Once the application loads and is listening on port 9292, navigate to http://localhost:9292/products , http://localhost:9292/products/42, http://localhost:9292/orders , and http://localhost:9292/orders/2600 to see the application in action. Stop it with `CTRL+C`
+You would start your server in the same way you would any Sinatra application. Both `shotgun` and `rackup` work just fine!
 
 ## Resources
 
