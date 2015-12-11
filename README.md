@@ -8,8 +8,9 @@
 
 If you think about a typical e-commerce application, you would need at least two models: one for orders and one for products. The products model would require a series of routes all starting with `/products`, and the orders model routes would start with `/orders`.  `/products/1` would represent requesting information about the very first product, and `/orders/1` would represent requesting information about the first order.
 
-When you think about all the CRUD actions, you would need a lot of controller actions for both of these models:
+When you think about all the CRUD actions, you would need a lot of controller actions for both of these models.
 
+Products:
 
 | Request | Route | CRUD Action |
 |----------|------|-------------|
@@ -22,9 +23,22 @@ When you think about all the CRUD actions, you would need a lot of controller ac
 | POST     | '/products/:id/delete'| Delete|
 
 
-With GET and POST requests, you're looking at a really full and complex controller. With that much code in one file, it gets hard to maneuver and find different pieces of the code you might need to edit or update.
+Orders:
 
-Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principal, only encapsulating logic relating to a singular entity in our application domain.
+| Request | Route | CRUD Action |
+|----------|------|-------------|
+| GET      | '/orders/:id' | Read |
+| GET      | '/orders/new'  | Create |
+| POST     | '/orders'   | Create |
+| GET      | '/orders/:id/edit'| Update|
+| POST     | '/orders/:id'     | Update |
+| GET      | '/orders'         | Read|
+| POST     | '/orders/:id/delete'| Delete|
+
+
+With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can gets hard to maneuver and find different pieces of the code you might need to edit or update.
+
+Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principal, only encapsulating logic relating to a singular entity in our application domain. We need to separate out a Products Controller and an Orders Controller.
 
 ### Products Controller
 
