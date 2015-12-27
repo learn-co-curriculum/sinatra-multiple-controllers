@@ -90,7 +90,7 @@ require_relative 'app/controllers/products_controller'
 require_relative 'app/controllers/orders_controller'
 ```
 
-Then, we must mount both classes. Only one class can be specified to be `run`. The other class must be loaded as Middleware We won't get into MiddleWare now, suffice to say, you simply `use` it instead of `run`.
+Then, we must mount both classes. Only one class can be specified to be `run`. The other class must be loaded as Middleware. We won't get into MiddleWare now, suffice to say, you simply `use` it instead of `run`.
 
 `config.ru`:
 ```ruby
