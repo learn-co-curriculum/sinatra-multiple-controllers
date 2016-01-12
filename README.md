@@ -1,10 +1,12 @@
 # Sinatra Multiple Controllers
 
 ## Objectives
-1. Multi-Controller Application structure.
-2. Mounting multiple controllers
 
-## Intro
+1. Describe the structure of a multi-controller application
+2. Separate domain concepts in our code into separate controllers
+3. Mount multiple controllers in config.ru file using run and use commands
+
+## Separating Out Our Controllers
 
 If you think about a typical e-commerce application, you would need at least two models: one for orders and one for products. The products model would require a series of routes all starting with `/products`, and the orders model routes would start with `/orders`.  `/products/1` would represent requesting information about the very first product, and `/orders/1` would represent requesting information about the first order.
 
@@ -38,7 +40,7 @@ Orders:
 
 With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can gets hard to maneuver and find different pieces of the code you might need to edit or update.
 
-Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principal, only encapsulating logic relating to a singular entity in our application domain. We need to separate out a Products Controller and an Orders Controller.
+Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principle, only encapsulating logic relating to a singular entity in our application domain. We need to separate out a Products Controller and an Orders Controller.
 
 ### Products Controller
 
