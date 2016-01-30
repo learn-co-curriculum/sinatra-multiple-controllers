@@ -38,7 +38,7 @@ Orders:
 | POST     | '/orders/:id/delete'| Delete|
 
 
-With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can gets hard to maneuver and find different pieces of the code you might need to edit or update.
+With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can get hard to maneuver and find different pieces of the code you might need to edit or update.
 
 Just like we separate out our different models into different files, we need to separate these domain concepts in our code into separate controllers. Every controller in our application should follow the Single Responsibility Principle, only encapsulating logic relating to a singular entity in our application domain. We need to separate out a Products Controller and an Orders Controller.
 
@@ -113,4 +113,6 @@ You would start your server in the same way you would any Sinatra application. B
 
 * [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
 * [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers' title='Sinatra Multiple Controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/sinatra-multiple-controllers' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
