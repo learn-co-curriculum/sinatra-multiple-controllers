@@ -105,7 +105,7 @@ use ProductsController
 run OrdersController
 ```
 
-Which classes you `use` or `run` matter, but we won't worry about that now, just make sure you only ever `run` one class and the rest our loaded via `use`.
+Which classes you `use` or `run` matter, but we won't worry about that now, just make sure you only ever `run` one class and the rest are loaded via `use`.
 
 You would start your server in the same way you would any Sinatra application. Both `shotgun` and `rackup` work just fine!
 
