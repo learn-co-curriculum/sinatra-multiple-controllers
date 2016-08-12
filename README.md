@@ -109,6 +109,13 @@ Which classes you `use` or `run` matter, but we won't worry about that now, just
 
 You would start your server in the same way you would any Sinatra application. Both `shotgun` and `rackup` work just fine!
 
+## Video Review
+
+* [Building a Site Generator, Part 1](https://github.com/learn-co-curriculum/sinatra-video-review-building-a-site-generator-part-1) 
+
+* [Building a Site Generator, Part 1](https://github.com/learn-co-curriculum/sinatra-video-review-building-a-site-generator-part-2) 
+
+
 ## Resources
 
 * [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
