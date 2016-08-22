@@ -115,15 +115,14 @@ You would start your server in the same way you would any Sinatra application. B
 
 ## Video Review
 
-* [Building a Site Generator, Part 1](https://github.com/learn-co-curriculum/sinatra-video-review-building-a-site-generator-part-1) 
+* [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=wXq-Na6mZuk) 
 
-* [Building a Site Generator, Part 1](https://github.com/learn-co-curriculum/sinatra-video-review-building-a-site-generator-part-2) 
+* [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=4Nute1F5TZ4) 
 
 
 ## Resources
 
 * [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
 * [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
-<a href='https://learn.co/lessons/sinatra-multiple-controllers' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
