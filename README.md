@@ -1,5 +1,9 @@
 # Sinatra Multiple Controllers
 
+## Overview
+
+In this lesson we'll cover separating domain concepts into separate controllers. 
+
 ## Objectives
 
 1. Describe the structure of a multi-controller application
