@@ -117,7 +117,7 @@ You would start your server in the same way you would any Sinatra application. B
 
 * [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=wXq-Na6mZuk) 
 
-* [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=4Nute1F5TZ4) 
+* [Building a Site Generator, Part 2](https://www.youtube.com/watch?v=4Nute1F5TZ4) 
 
 
 ## Resources
@@ -126,3 +126,5 @@ You would start your server in the same way you would any Sinatra application. B
 * [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
