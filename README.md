@@ -66,7 +66,7 @@ end
 
 ### Orders Controller
 
-Similarly, we'd have `OrdersController` defined in `app/controllers/orders_controller.rb`/
+Similarly, we'd have `OrdersController` defined in `app/controllers/orders_controller.rb`.
 
 ```ruby
 class OrdersController < Sinatra::Base
