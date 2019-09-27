@@ -26,7 +26,7 @@ Products:
 | GET      | '/products/:id/edit'| Update|
 | POST     | '/products/:id'     | Update |
 | GET      | '/products'         | Read|
-| POST     | '/products/:id/delete'| Delete|
+| POST     | '/products/:id'| Delete|
 
 
 Orders:
@@ -39,7 +39,7 @@ Orders:
 | GET      | '/orders/:id/edit'| Update|
 | POST     | '/orders/:id'     | Update |
 | GET      | '/orders'         | Read|
-| POST     | '/orders/:id/delete'| Delete|
+| POST     | '/orders/:id'| Delete|
 
 
 With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can get hard to maneuver and find different pieces of the code you might need to edit or update.
