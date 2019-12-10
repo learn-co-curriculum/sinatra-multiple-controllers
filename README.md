@@ -115,6 +115,8 @@ You would start your server in the same way you would any Sinatra application. B
 
 ## Video Review
 
+**NOTE** these videos appear later in the Sinatra curriculum.
+
 * [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=wXq-Na6mZuk) 
 
 * [Building a Site Generator, Part 2](https://www.youtube.com/watch?v=4Nute1F5TZ4) 
