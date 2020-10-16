@@ -126,7 +126,3 @@ You would start your server in the same way you would any Sinatra application. B
 
 * [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
 * [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-multiple-controllers'>Sinatra Multiple Controllers</a> on Learn.co and start learning to code for free.</p>
