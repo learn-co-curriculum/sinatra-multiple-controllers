@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lesson we'll cover separating domain concepts into separate controllers. 
+In this lesson we'll cover separating domain concepts into separate controllers.
 
 ## Objectives
 
@@ -12,35 +12,33 @@ In this lesson we'll cover separating domain concepts into separate controllers.
 
 ## Separating Out Our Controllers
 
-If you think about a typical e-commerce application, you would need at least two models: one for orders and one for products. The products model would require a series of routes all starting with `/products`, and the orders model routes would start with `/orders`.  `/products/1` would represent requesting information about the very first product, and `/orders/1` would represent requesting information about the first order.
+If you think about a typical e-commerce application, you would need at least two models: one for orders and one for products. The products model would require a series of routes all starting with `/products`, and the orders model routes would start with `/orders`. `/products/1` would represent requesting information about the very first product, and `/orders/1` would represent requesting information about the first order.
 
 When you think about all the CRUD actions, you would need a lot of controller actions for both of these models.
 
 Products:
 
-| Request | Route | CRUD Action |
-|----------|------|-------------|
-| GET      | '/products/:id' | Read |
-| GET      | '/products/new'  | Create |
-| POST     | '/products'   | Create |
-| GET      | '/products/:id/edit'| Update|
-| POST     | '/products/:id'     | Update |
-| GET      | '/products'         | Read|
-| POST     | '/products/:id'| Delete|
-
+| Request | Route                | CRUD Action |
+| ------- | -------------------- | ----------- |
+| GET     | '/products/:id'      | Read        |
+| GET     | '/products/new'      | Create      |
+| POST    | '/products'          | Create      |
+| GET     | '/products/:id/edit' | Update      |
+| POST    | '/products/:id'      | Update      |
+| GET     | '/products'          | Read        |
+| POST    | '/products/:id'      | Delete      |
 
 Orders:
 
-| Request | Route | CRUD Action |
-|----------|------|-------------|
-| GET      | '/orders/:id' | Read |
-| GET      | '/orders/new'  | Create |
-| POST     | '/orders'   | Create |
-| GET      | '/orders/:id/edit'| Update|
-| POST     | '/orders/:id'     | Update |
-| GET      | '/orders'         | Read|
-| POST     | '/orders/:id'| Delete|
-
+| Request | Route              | CRUD Action |
+| ------- | ------------------ | ----------- |
+| GET     | '/orders/:id'      | Read        |
+| GET     | '/orders/new'      | Create      |
+| POST    | '/orders'          | Create      |
+| GET     | '/orders/:id/edit' | Update      |
+| POST    | '/orders/:id'      | Update      |
+| GET     | '/orders'          | Read        |
+| POST    | '/orders/:id'      | Delete      |
 
 With GET and POST requests, you're looking at a really full and complex controller, with 7 controller actions for each model. That's 14 controller actions before you even add in users or shopping carts. With that much code in one file, it can get hard to maneuver and find different pieces of the code you might need to edit or update.
 
@@ -115,16 +113,7 @@ Which classes you `use` or `run` matter, but we won't worry about that now, just
 
 You would start your server in the same way you would any Sinatra application. Both `shotgun` and `rackup` work just fine!
 
-## Video Review
-
-**NOTE** these videos appear later in the Sinatra curriculum.
-
-* [Building a Site Generator, Part 1](https://www.youtube.com/watch?v=wXq-Na6mZuk) 
-
-* [Building a Site Generator, Part 2](https://www.youtube.com/watch?v=4Nute1F5TZ4) 
-
-
 ## Resources
 
-* [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
-* [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
+- [Blake Mizerany - Ruby Learning Interview](http://rubylearning.com/blog/2009/08/11/blake-mizerany-how-do-i-learn-and-master-sinatra/)
+- [Companies Using Sinatra](http://www.sinatrarb.com/wild.html)
